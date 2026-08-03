@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { MessageCircle, Mail, MapPin, Clock } from 'lucide-react';
 import { InstagramIcon } from '../components/shared/InstagramIcon';
 import { AnimatedSection } from '../components/shared/AnimatedSection';
+import { WhatsAppChips } from '../components/shared/WhatsAppChips';
 import { INSTAGRAM, EMAIL, buildWhatsAppLink } from '../lib/utils';
 
 const contactCards = [
@@ -60,6 +61,11 @@ export default function Contact() {
             </p>
           </AnimatedSection>
         </div>
+      </section>
+
+      {/* Quick-reply chips */}
+      <section className="bg-brand-cream pt-0 pb-10 px-4">
+        <WhatsAppChips title="What are you looking for? Tap to message instantly" />
       </section>
 
       {/* Contact cards */}

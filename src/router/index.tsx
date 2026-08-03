@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import { AnimatePresence, motion } from 'framer-motion';
 import { Layout } from '../components/layout/Layout';
+import { HamperModalProvider } from '../context/HamperModalContext';
 import Home from '../pages/Home';
 import Shop from '../pages/Shop';
 import CustomOrder from '../pages/CustomOrder';
@@ -46,9 +47,11 @@ function AnimatedRoutes() {
 export function AppRouter() {
   return (
     <BrowserRouter>
-      <Layout>
-        <AnimatedRoutes />
-      </Layout>
+      <HamperModalProvider>
+        <Layout>
+          <AnimatedRoutes />
+        </Layout>
+      </HamperModalProvider>
     </BrowserRouter>
   );
 }
