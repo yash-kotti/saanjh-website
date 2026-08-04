@@ -5,7 +5,7 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
-export const WHATSAPP_NUMBER = '7420825461'; // Replace with real number
+export const WHATSAPP_NUMBER = '8329789451'; // Replace with real number
 export const EMAIL = 'Saanjhbygayatri011@gmail.com';
 export const INSTAGRAM = 'https://www.instagram.com/saanjh.by.gayatri/';
 
